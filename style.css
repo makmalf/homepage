@@ -1,0 +1,124 @@
+body {
+	padding-top: 50px;
+}
+
+.inner {
+	vertical-align: middle;
+}
+
+/**
+ * Main Navigation
+ */
+header#masthead .navbar {
+	background: #00a99d;
+	border: none;
+	border-radius: 0;
+
+}
+
+header#masthead .navbar a {
+	color: #fff;
+}
+
+header#masthead li.active a {
+	color: #00a99d;
+	background: #fff;
+}
+
+header#masthead .navbar-default .navbar-nav > .open > a {
+	background: #fff;
+	color: #00a99d;
+}
+
+header#masthead ul.dropdown-menu li a {
+	color: #555;
+}
+
+/**
+ * Welcome
+ */
+#welcome {
+	padding-top: 42px;
+	padding-bottom: 42px;
+	height: 320px;
+	background-image: url(images/back-head.jpg);
+	background-repeat: no-repeat;
+	color: #fff;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+
+	font-size: 18px;
+}
+
+#welcome h1 {
+	font-size: 62px;
+}
+
+/**
+ * COntent
+ */
+#content {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+/**
+ * Product Item 
+ */
+#product-filter select {
+	margin-bottom: 32px;
+}
+
+.product-item {
+	height: 230px;
+	background: #00a99d;
+	margin-bottom: 30px;
+}
+
+
+/**
+ * Footer
+ */
+footer#colophon {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	background: #362f2d;
+
+	color: #fff;
+}
+
+footer#colophon a {
+	color: #fff;
+	font-weight: bold;
+}
+
+.footer-menu ul {
+	margin-left: 0;
+	list-style: none;
+}
+
+.footer-menu li {
+	display: inline-block;
+	padding-left: 32px;
+}
+
+
+/**
+ * RWD
+ */
+
+@media screen and (max-width: 360px) {
+	body .col-xs-6 {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	#welcome {
+		font-size: 14px;
+	}
+
+	#welcome h1 {
+		font-size: 32px;
+	}
+}
