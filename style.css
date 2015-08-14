@@ -78,6 +78,17 @@ header#masthead ul.dropdown-menu li a {
 
 
 /**
+ * Breadcrumb
+ */
+#breadcrumb {
+	padding-top: 42px;
+
+}
+
+
+
+
+/**
  * Footer
  */
 footer#colophon {
@@ -105,8 +116,88 @@ footer#colophon a {
 
 
 /**
+ * Blog Feed
+ */
+article.blog-feed {
+	position: relative;
+	height: 320px;
+	overflow: hidden;
+	margin-bottom: 32px;
+}
+
+article.blog-feed img {
+	position: absolute;
+	max-width: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+article.blog-feed .blog-feed-meta {
+	color: #fff;
+	position: absolute;
+	bottom: 30px;
+	padding: 18px 24px;
+	left: 30px;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+article.blog-feed .blog-feed-meta a {
+	color: #fff;
+}
+
+
+/**
+ * Single Content
+ */
+body.single-page #single-content {
+	width: 70%;
+	float: left;
+	padding: 0px 40px 40px 40px;
+	
+}
+
+.post-meta {
+	margin-bottom: 32px;
+}
+
+.post-content img {
+	max-width: 100%;
+}
+
+/**
+ * Secondary
+ */
+#secondary {
+	position: absolute;
+	right: 0;
+	background: #ebebeb;
+	max-width: 320px;
+	width: 100%;
+	height: 480px;
+	float: right;
+	padding: 32px;
+}
+
+body.single-page #secondary {
+	position: static;
+	float: right;
+	width: 30%;
+}
+
+
+
+/**
  * RWD
  */
+
+@media screen and (min-width: 1025px) {
+	#secondary {
+		max-width: 420px;
+	}
+}
 
 @media screen and (max-width: 360px) {
 	body .col-xs-6 {
